@@ -25,4 +25,5 @@ int main(){
         printf("%c is consonant", ch);
         break;
     }
+    return 0;
 }
