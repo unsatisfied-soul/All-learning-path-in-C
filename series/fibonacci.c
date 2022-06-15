@@ -12,4 +12,5 @@ int main(){
         secondNumber = fibonacciNumber;
         printf("%d,", fibonacciNumber);
     }
+    return 0;
 }
