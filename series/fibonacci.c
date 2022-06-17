@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int numbValue,i,firstNumber=0,secondNumber=1,fibonacciNumber;
+    int numbValue,i,firstNumber=0,secondNumber=1,fibonacciNumber,sum;
     printf("enter a number :");
     scanf("%d", &numbValue);
     printf("%d, %d,", firstNumber,secondNumber);
@@ -10,7 +10,7 @@ int main(){
         fibonacciNumber = firstNumber + secondNumber;
         firstNumber = secondNumber;
         secondNumber = fibonacciNumber;
-        printf("%d,", fibonacciNumber);
+        printf("%d", fibonacciNumber);
     }
     return 0;
 }
