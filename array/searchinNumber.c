@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    int numValue,i,array[100],n;
+    int numValue,i,array[100],n,position=-1;
 
     printf("how many value want to add ? \n");
     scanf("%d",&n);
@@ -17,8 +17,9 @@ int main(){
 
     for(i=0;i<n;i++){
         if(array[i]==numValue){
-            printf("your %d value have %d index",numValue,i);
-        }
+            printf("your %d value have %d position",numValue,i+1);
+            break;
+        } 
     }
 
 }
