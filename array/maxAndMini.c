@@ -12,17 +12,22 @@ int main(){
 
     //maximum value
     for(i=1;i<n;i++){
-        if(num[i]>maxMini){
-            printf("maximum number is %d",num[i]);
+        if(num[i]==maxMini){
+            maxMini = num[i];
+        }else if(num[i]>maxMini){
+            maxMini = num[i];
+        }else{
+            printf("there is two number same");
         }
     }
+    printf("maximum number is %d", maxMini);
 
     //minimum value
 
-    for(i=1;i<n;i++){
-        if(num[i]<maxMini){
-            printf("minimum number is %d",num[i]);
+    // for(i=1;i<n;i++){
+    //     if(num[i]<maxMini){
+    //         printf("minimum number is %d",num[i]);
             
-        }
-    }
+    //     }
+    // }
 }
