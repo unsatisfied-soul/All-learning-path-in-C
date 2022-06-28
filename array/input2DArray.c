@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int doubleValue[20][20],rowNumber,colNumber,rowData,colData,i,j,rowDatapub,colDataPub;
+    int rowNumber,colNumber,i,j;
 
     printf("please enter first rowNumber and column Number :\n");
     scanf("%d \n", &rowNumber);
     scanf("%d", &colNumber);
+    int doubleValue[rowNumber][colNumber];
 
     printf("please add %d row and %d column value\n",rowNumber,colNumber);
     for(i=0;i<rowNumber;i++){
@@ -16,10 +17,11 @@ int main(){
     }
 
     printf("row column value is: \n");
-    for(rowDatapub=0;rowDatapub<rowNumber;rowDatapub++){
-        for(colDataPub=0;colDataPub<colNumber;colDataPub++){
-            printf("[%d ]",doubleValue[rowDatapub][colDataPub]);
+    for(i=0;i<rowNumber;i++){
+        printf("[");
+        for(j=0;j<colNumber;j++){
+            printf("%d ",doubleValue[i][j]);
         }
-        printf("\n");
+        printf("]\n");
     }
 }
