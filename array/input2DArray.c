@@ -16,12 +16,7 @@ int main(){
         printf("\n");
     }
 
-    printf("row column value is: \n");
-    for(i=0;i<rowNumber;i++){
-        printf("[");
-        for(j=0;j<colNumber;j++){
-            printf("%d ",doubleValue[i][j]);
-        }
-        printf("]\n");
-    }
+    
+
+    
 }
