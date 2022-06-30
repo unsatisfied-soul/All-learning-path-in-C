@@ -8,7 +8,7 @@ int main(){
     scanf("%d\n",&secondrowNum);
     scanf("%d",&secondColNum);
     int firstArry[firstrowNum][firstColNum],secondArray[secondrowNum][secondColNum];
-
+    printf("%d",firstArry[firstrowNum][firstColNum]);
     //here add first array value
     printf("please add first %d row and %d column value\n",firstrowNum,firstColNum);
     for(row=0;row<firstrowNum;row++){
