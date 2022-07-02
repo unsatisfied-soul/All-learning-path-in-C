@@ -5,7 +5,12 @@ int main(){
     char target[40];
     printf("enter your name : \n");
     fgets(name,40,stdin);
-    strcpy(target,name);
-    printf("%s",target);
+    int i=0;
 
+    while (name[i]!='\n'){
+        target[i]=name[i];
+        i++;
+    }
+    target[i]='\0';
+    printf("%s",target);
 }
