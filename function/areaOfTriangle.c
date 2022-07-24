@@ -1,6 +1,6 @@
 #include <stdio.h>
-double trianleArea(double base,double height){
-    return 0.5*base*height;
+double trianleArea(double b,double h){
+    return 0.5*b*h;
 }
 int main(){
     double base,height;
