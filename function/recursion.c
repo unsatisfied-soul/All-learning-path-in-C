@@ -1,12 +1,20 @@
 #include <stdio.h>
-int fact(int n){
-    if(n==1){
-        return 1;
-    }else{
-        return n*fact(n-1);
+int my_function(int a, int b)
+{
+    if(a==1){
+       return 1;
+    }else if(a==0||b==0){
+      return 0;
+    }
+    else if(b==1){
+       return 2;
+    }
+    else{
+       return my_function(a, b-1)+ my_function(a-1,b);
     }
 }
-int main(){
-    int result = fact(5);
-    printf("%d",result);
+
+int main()
+{
+    printf("RESULT: %d", my_function(3, 4));
 }
