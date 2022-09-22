@@ -9,7 +9,7 @@ int main(){
         printf("error occered here");
     }else{
         printf("enter a num:\n");
-        scanf("%d",&num);
+        scanf("%d\n",&num);
     }
     fprintf(bginner,"%d",num);
     fclose(bginner);
